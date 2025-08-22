@@ -3,12 +3,18 @@
  * Copyright (c) 2025-present Ivan Reshetnikov, see license.txt
 */
 
-#ifndef CORE_H
-#define CORE_H
+#ifndef LOG_H
+#define LOG_H
+
+#include "platform_def.h"
 
 #if defined(PLATFORM_WINDOWS) || defined(PLATFORM_LINUX)
-#define LOG(format_string, ...) \
-    printf("Debug %s:%d @%s - " format_string "\n", __FILENAME__, __LINE__, __func__, ##__VA_ARGS__)
+
+    #include <stdio.h>
+
+    #define LOG(format_string, ...) \
+        printf("Debug: %s:%d %s()\t" format_string "\n", __FILE_NAME__, __LINE__, __func__, ##__VA_ARGS__)
+
 #endif
 
 #endif // #ifdef CORE_H

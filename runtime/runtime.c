@@ -5,10 +5,9 @@
 
 #include "../core/core.h"
 
-
 int main(int arg_count, char* arg_vec[])
 {
-    LOG("Hello");
+    LOG("runtime");
 
     return 0;
 }
