@@ -8,4 +8,11 @@
 
 #include "log.h"
 
+#if defined(PLATFORM_WINDOWS)
+#include "window_win32.h"
+#endif
+#if defined(PLATFORM_LINUX)
+#include "window_x11.h"
+#endif
+
 #endif // #ifdef CORE_H

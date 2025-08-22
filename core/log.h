@@ -17,4 +17,4 @@
 
 #endif
 
-#endif // #ifdef CORE_H
+#endif // #ifdef LOG_H
