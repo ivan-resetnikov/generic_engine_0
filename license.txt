@@ -1,0 +1,9 @@
+The License
+
+Definitions:
+    (This/The) Project -
+        The project hosted at https://github.com/ivan-resetnikov/generic_engine_0 authored by Ivan Reshetnikov at ivan-reshetnikov.dev, reachable at legal@ivan-reshetnikov.dev.
+
+Terms:
+    Unauthorized copying of any file of This Project, via any medium is strictly prohibited
+    Proprietary and confidential
