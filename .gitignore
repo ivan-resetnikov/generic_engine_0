@@ -1,2 +1,6 @@
+# Default build directories
 runtime/build/
 editor/build/
+
+# VS Code
+.vscode/
