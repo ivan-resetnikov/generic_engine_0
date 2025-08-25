@@ -11,7 +11,7 @@ WindowContext g_window = {0};
 
 int main(int arg_count, char* arg_vec[])
 {
-    LOG("editor");
+    LOG_DEBUG("editor");
 
     create_window(&g_window);
     start_main_loop(&g_window, draw_surface_update);

@@ -6,6 +6,9 @@
 #ifndef WINDOW_X11_H
 #define WINDOW_X11_H
 
+#include "platform_def.h"
+#ifdef PLATFORM_LINUX
+
 #include <X11/Xlib.h>
 #include <stdint.h>
 
@@ -67,5 +70,7 @@ inline void close_window(WindowContext* win)
     XDestroyWindow(win->display, win->window);
     XCloseDisplay(win->display);
 }
+
+#endif // #ifdef PLATFORM_LINUX
 
 #endif // #ifdef WINDOW_X11_H
